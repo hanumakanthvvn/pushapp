@@ -13,7 +13,9 @@ development:
   encoding: utf8
   reconnect: false
   database: pushapp_development
+  host: localhost
+  port: 3306
   pool: 5
   username: root
-  password: pramati
-  socket: /var/run/mysqld/mysqld.sock
+  password: root
+  #socket: /var/run/mysqld/mysqld.sock

@@ -14,6 +14,7 @@ module Api
       def create
         respond_with User.create(params[:user])
       end
+      
 
       def update
         respond_with User.update(params[:id], params[:users])

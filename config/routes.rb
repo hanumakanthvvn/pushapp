@@ -1,15 +1,19 @@
 Pushapp::Application.routes.draw do
 
+  
+
   namespace :api do
     namespace :v1 do
       resources :users
+      resources :timesheets
       resources :device, :only => ['index']
       match 'device/push_notification' => 'device#push_notification', :via => :post
-      match 'device/:registration_id/send_status' =< 'device#send_status', :via =< :post
+      match 'device/:registration_id/send_status' => 'device#send_status', :via => :post
     end
   end
 
   resources :users
+  resources :timesheets
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyText
+  duration: 2015-05-29 14:20:39
+
+two:
+  description: MyText
+  duration: 2015-05-29 14:20:39
